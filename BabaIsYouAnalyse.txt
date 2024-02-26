@@ -1,0 +1,18 @@
+Analyse:
+
+1) Puzzle
+2) Former des phrases, qui créent des règles-> Pousser objets, gagner, etre bloqué, etc...
+3) Il faut comprendre comment le puzzle a été créé en procédant de manière inverse: Partir de la fin et arriver au début pour connaitre la solution
+4) 
+Baba is Wall: Tous les objets "Baba" deviennent des objets "Murs"
+Wall is You: Tous les objets "Wall" deviennent controlable par le joueur
+You is Baba: Non valide car "You" est un attribut, qui doit etre appliqué a un objet (donc etre après un "Is"). Au contraire, un obket peut etre soit avant soit après le "Is"
+Baba and Wall is You: Tous les objets "Baba" et "Wall" deviennent controlable par le joueur
+5) Je pense que chaque Objet ou Attribut placé après le "Is" lance une fonction qui s'applique a l'objet avant le "Is"
+6) Comme tout les Puzzle games, j'aime tant que je progresse, et arrete d'aimer quand je bloque. Ici, c'était au monde 2
+
+Pratique:
+
+1) La formation de phrases (Dans mon cas, reproduite avec seulement 3 attributs: "You", "Win" et "Sink")
+2) J'ai créé un menu permettant de créer des phrases sans mécanique de poussée. A chaque fois qu'une case est remplie, le code check chaque case pour voir quel effet peut etre appliqué. Une Game Instance sur le coté permet de garder en tete les attributs de chaque Objet (ex: Booléen "CubeIsYou" est vérifié par le cube quand on lui demande de bouger)
+3) 4) C'est l'élément primodial du jeu: Le but du joueur n'est pas d'atteindre l'objectif, mais de changer les règles jusqu'a ce que l'objectif soit accesible.
